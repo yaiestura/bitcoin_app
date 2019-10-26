@@ -5,7 +5,6 @@ import fetchData from '../actions/fetchCurrency'
 
 const Card = (props) => {
     const time = props["data"]["time"];
-    console.log(time["updated"]);
     return (
         <div className="card d-flex">
           <div className="card-body">
