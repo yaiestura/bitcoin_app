@@ -1,0 +1,49 @@
+.header {
+  /* The image used */
+  background-image: url("../media/bg.jpg");
+  min-height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position the navbar container inside the image */
+.header-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar-brand a {
+  font-size: 24px;
+}
+
+.header-content {
+  margin-top: 170px;
+}
+
+.header-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.header-content h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.header-content p {
+  font-size: 16px;
+  line-height: 2rem;
+  margin-bottom: 80px;
+}
+
+.btn-primary {
+  background-color: #6b8aff !important;
+  border-color: #6b8aff !important;
+}
+
+.btn-primary:hover {
+  background-color: rgba(107, 138, 255, 0.2) !important;
+}

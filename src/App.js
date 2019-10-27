@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Currency from './components/Currency'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Content from './components/Content'
+import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 class App extends Component {
 
@@ -9,8 +11,10 @@ class App extends Component {
 
     return (
       <div className="App">
-          <Navbar/>
-          <Currency/>
+          <Header/>
+          <Content/>
+          <Contact/>
+          <Footer/>          
       </div>
   );
   }

@@ -1,0 +1,19 @@
+.contact-bg {
+    /* The image used */
+    background-image: url("../media/contact-bg.jpg");
+    min-height: 360px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position the navbar container inside the image */
+  .contact-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-wrapper h2 {
+    font-size: 50px;
+  }
