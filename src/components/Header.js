@@ -43,7 +43,7 @@ const Header = () => {
             <br></br>  
             nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
           </p>
-          <button type="button" className="btn btn-primary text-uppercase text-white">Join now</button>
+          <button type="button" className="btn btn-primary text-uppercase text-white">Get Started</button>
         </div>
     </div>
   </div> 

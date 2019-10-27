@@ -1,9 +1,10 @@
 import React from 'react'
+import '../styles/footer.css'
 
 const Footer = (props) => {
 
     return (
-        <div className="footer-section section section-pad-md light bg-footer has-bg-image">
+        <footer className="footer-section section section-pad-md light bg-footer has-bg-image">
 			<div className="imagebg footerbg bg-image-loaded">
 				<img src="images/footer-bg.png" alt="footer-bg"/>
 			</div>
@@ -64,7 +65,7 @@ const Footer = (props) => {
 					</div>
 					<div className="col-md-3 col-sm-6 wgs-box res-m-bttm">
 						<div className="wgs-footer wgs-contact">
-							<h5 className="wgs-title ucap">get in touch</h5>
+							<h5 className="wgs-title ucap">Get in touch</h5>
 							<div className="wgs-content">
 								<ul className="wgs-contact-list">
 									<li><span className="pe pe-7s-map-marker"></span>34 Tallinskaya Street <br></br>Moscow, Russia 123592</li>
@@ -83,7 +84,7 @@ const Footer = (props) => {
                             <p>Copyright © 2019 Cryptocurrency. Created by <a href="https://github.com/yaiestura">Yaiestura</a></p>
                         </div>
                         <div className="col-sm-5 text-right mobile-left">
-                            <ul className="social">
+                            <ul className="social d-flex justify-content-between">
                                 <li><a href="#"><i className="fa fa-facebook">Facebook</i></a></li>
                                 <li><a href="#"><i className="fa fa-twitter">Twitter</i></a></li>
                                 <li><a href="#"><i className="fa fa-linkedin">Linkedin</i></a></li>
@@ -93,7 +94,7 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 

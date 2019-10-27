@@ -29,47 +29,47 @@ const Contact = () => {
 							<div className="row">
 								<div className="col-4 res-m-bttm">
 									<div className="contact-entry">
-										<h6>Crypto<span>Coin</span></h6>
-										<p>34 south franklin road<br></br>santa ana,ca 8975,usa</p>
+										<h6>MIEM HSE</h6>
+										<p>34 Tallinskaya Street<br></br>Moscow, Russia 123592</p>
 									</div>
 								</div>
 								<div className="col-sm-4 res-m-bttm">
 									<div className="contact-entry">
-										<h6>contact number</h6>
+										<h6>Contact number</h6>
 										<p>phone:  781-123-9865<br></br>toll free: 800-123-5689</p>
 									</div>
 								</div>
 								<div className="col-sm-4 res-m-bttm">
 									<div className="contact-entry">
-										<h6>office hours</h6>
-										<p>monday - friday<br></br>8:30am - 5:00pm</p>
+										<h6>Working hours</h6>
+										<p>Monday - Saturday<br></br>7:00am - 10:00pm</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="contact-form">
 							<p>Complete and submit the form below</p>
-							<form id="contact-form" className="form-message" action="form/contact.php" method="post" novalidate="novalidate">
+							<form id="contact-form" className="form-message" action="#" method="post" novalidate="noValidate">
 								<div className="form-results"></div>
 								<div className="form-group row">
 									<div className="form-field col-sm-6 form-m-bttm">
-										<input name="contact-name" type="text" placeholder="Full Name *" class="form-control required" aria-required="true"/>
+										<input name="contact-name" type="text" placeholder="Full Name" class="form-control required" aria-required="true"/>
 									</div>
 									<div className="form-field col-sm-6">
-										<input name="contact-email" type="email" placeholder="Email *" class="form-control required email" aria-required="true"/>
+										<input name="contact-email" type="email" placeholder="Email" class="form-control required email" aria-required="true"/>
 									</div>
 								</div>
 								<div className="form-group row">
 									<div className="form-field col-sm-6 form-m-bttm">
-										<input name="contact-phone" type="text" placeholder="Phone Number *" class="form-control required" aria-required="true"/>
+										<input name="contact-phone" type="text" placeholder="Phone Number" class="form-control required" aria-required="true"/>
 									</div>
 									<div className="form-field col-sm-6">
-										<input name="contact-subject" type="text" placeholder="Subject *" class="form-control required" aria-required="true"/>
+										<input name="contact-subject" type="text" placeholder="Subject" class="form-control required" aria-required="true"/>
 									</div>
 								</div>
 								<div className="form-group row">
 									<div className="form-field col-md-12">
-										<textarea name="contact-message" placeholder="Messages *" class="txtarea form-control required" aria-required="true"></textarea>
+										<textarea name="contact-message" placeholder="Messages" class="txtarea form-control required" aria-required="true"></textarea>
 									</div>
 								</div>
 								<input type="text" className="hidden" name="form-anti-honeypot" value=""/>

@@ -10,10 +10,15 @@
   
   /* Position the navbar container inside the image */
   .contact-wrapper {
-    width: 90%;
+    width: 90%; 
     margin: 0 auto;
   }
 
   .contact-wrapper h2 {
     font-size: 50px;
   }
+
+::-webkit-input-placeholder:after {
+    content: "*";
+    color: red;
+}

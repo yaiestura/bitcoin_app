@@ -40,10 +40,10 @@
 }
 
 .btn-primary {
-  background-color: #6b8aff !important;
-  border-color: #6b8aff !important;
+  background-color: #853112 !important;
+  border-color: #fff !important;
 }
 
 .btn-primary:hover {
-  background-color: rgba(107, 138, 255, 0.2) !important;
+  background-color: rgb(217, 136, 51) !important;
 }
