@@ -5,10 +5,7 @@ const Footer = (props) => {
 
     return (
         <footer className="footer-section section section-pad-md light bg-footer has-bg-image">
-			<div className="imagebg footerbg bg-image-loaded">
-				<img src="images/footer-bg.png" alt="footer-bg"/>
-			</div>
-			<div className="container">
+			<div className="container w-80">
 				<div className="row">
 					<div className="col-md-3 col-sm-6 wgs-box res-m-bttm">
 						<div className="wgs-footer wgs-menu">

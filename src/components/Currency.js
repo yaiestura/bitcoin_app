@@ -1,63 +1,72 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import fetchData from '../actions/fetchCurrency'
+import '../styles/currency.css'
 
-// New api https://api.nomics.com/v1/markets?key=your-api-key-goes-here
-// http://docs.nomics.com/#operation/getCurrenciesTicker
-
-const Cards = (props) => {
-    const bpiData = props.data['bpi'];
-    const timeData = props.data['time'];
-    const currentTime = timeData && timeData["updated"];
-    const cardItems = bpiData && Object.keys(bpiData).map( item => {
-      return (
+const Card = (props) => {
+  console.log(props.data);
+  const priceTrend = <span className="align-top">
+    { Math.sign(props.data['1d']['price_change_pct']) == 1 ? (<i class="fa fa-sort-up"></i>)
+    :(<i class="fa fa-sort-down"></i>)}
+  </span>;
+  return(
+    <div className="card">
+      <div className="card-body">
         <div>
-          <p>{bpiData[item].code}</p>
-          <p>{bpiData[item].rate_float}</p>
-        </div>
-      );
-    })
-    return (
-        <div className="card d-flex">
-          <div className="card-body">
-            <p>Data is valid for {currentTime}</p>
-            {cardItems}
+              <p>
+                <img src={props.data['logo_url']} alt={props.data['name']} width="20" height="20"/>
+                <a className="ml-2">{props.data['name']}</a>
+              </p>
+              <p>{props.data['currency']} - USD</p>
+              <p>$ {Number(props.data['price']).toFixed(2)}
+              ({Number(props.data['1d']['price_change_pct']).toFixed(3)} {priceTrend})</p>
           </div>
         </div>
-    )
+    </div>
+  )
 }
 
 class Currency extends Component {
 
+
     componentDidMount = () => {
-        this.props.fetchData('https://api.coindesk.com/v1/bpi/currentprice.json');
+        this.props.fetchData('https://api.nomics.com/v1/currencies/ticker?key=96bd9520ece23491ac95e92176e88196&ids=BTC,ETH,XRP,BCH,LTC&interval=1h,1d');
     }
 
     render = () => {
+      // console.log(this.props.data);
+      // this.props.data && this.props.data.map( data => {
+      //   console.log(data);
+      // })
+      const cryptoData = this.props.data && this.props.data.map( (data, id) => {
+        return (
+            <Card key={id} data={data}/>
+        );
+      });
+
 
       return (
-        <div>
-          <p>Data:</p>
-
-          {this.props.pending ? (
-              <div className="spinner-border" role="status">
-                  <span className="sr-only">Loading...</span>
-              </div>
-            ) : (
-        this.props.data ?
-        <div>
-          <h2>{this.props.data.disclaimer}</h2>
-          <Cards data={this.props.data}/>
-        </div>
-         : (<p>Error. Data is not received.</p>))
-           }
+        <div className="currency-content">
+          <div className="container">
+            <h5>Live cryptocurrency data:</h5>
+            {this.props.pending ? (
+                <div className="spinner-border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+              ) : (
+            this.props.data ?
+            <div className="cryptoData">
+              {cryptoData}
+            </div>
+            : (<p>Error. Data is not received.</p>))
+            }
+          </div>
         </div>
       )
     }
 }
 
 const mapStateToProps = state => {
-    // console.log(state);
     return {
         data: state.currencyReducer.currency,
         pending: state.currencyReducer.pending

@@ -1,6 +1,6 @@
 
 const initialState = {
-    currency: {},
+    currency: [],
     pending: false,
     error: false
 
@@ -21,13 +21,13 @@ export default function currencyReducer(state = initialState, action) {
 
       case "FETCH_CURRENCY_PENDING": {
 
-      return { ...state, currency: {}, pending: true, error: false }
+      return { ...state, currency: [], pending: true, error: false }
 
       }
 
       case "FETCH_CURRENCY_ERROR": {
 
-      return { ...state, currency: {}, pending: false, error: true }
+      return { ...state, currency: [], pending: false, error: true }
 
     }
       default:

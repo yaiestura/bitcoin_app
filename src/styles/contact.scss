@@ -1,0 +1,31 @@
+.contact-bg {
+    /* The image used */
+    background-image: url("../media/contact-bg.jpg");
+    min-height: 300px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* Position the navbar container inside the image */
+  .contact-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-wrapper h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+::-webkit-input-placeholder:after {
+    content: "*";
+    color: red;
+}

@@ -3,7 +3,6 @@ export const FETCH_CURRENCY = 'FETCH_CURRENCY';
 export const FETCH_CURRENCY_ERROR = 'FETCH_CURRENCY_ERROR';
 
 function fetchCurrency(payload) {
-    // console.log(payload);
     return {
         type: FETCH_CURRENCY,
         payload

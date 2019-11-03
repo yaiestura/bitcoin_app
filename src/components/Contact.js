@@ -6,7 +6,7 @@ const mapData = {
     center: [55.803469, 37.409846],
     zoom: 14,
   };
-  
+
   const coordinates = [
     [55.803469, 37.409846]
 ];
@@ -49,7 +49,7 @@ const Contact = () => {
 						</div>
 						<div className="contact-form">
 							<p>Complete and submit the form below</p>
-							<form id="contact-form" className="form-message" action="#" method="post" novalidate="noValidate">
+							<form id="contact-form" onSubmit={event => { event.preventDefault(); }}>
 								<div className="form-results"></div>
 								<div className="form-group row">
 									<div className="form-field col-sm-6 form-m-bttm">
@@ -69,11 +69,10 @@ const Contact = () => {
 								</div>
 								<div className="form-group row">
 									<div className="form-field col-md-12">
-										<textarea name="contact-message" placeholder="Messages" class="txtarea form-control required" aria-required="true"></textarea>
+										<textarea name="contact-message" placeholder="Messages" class="textarea form-control required" aria-required="true"></textarea>
 									</div>
 								</div>
-								<input type="text" className="hidden" name="form-anti-honeypot" value=""/>
-								<button type="submit" className="btn btn-alt">Submit</button>
+								<button type="submit" className="btn btn-primary">Submit</button>
 							</form>
 						</div>
 					</div>
@@ -85,8 +84,8 @@ const Contact = () => {
                         </YMaps>
                     </div>
 				</div>
-			</div>	
-		</div>		
+			</div>
+		</div>
     </div>
 </div>
 );

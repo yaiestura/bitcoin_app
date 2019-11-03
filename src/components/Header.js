@@ -28,9 +28,6 @@ const Header = () => {
             <li className="nav-item">
               <a className="nav-link text-uppercase text-white" href="#">FAQ's</a>
             </li>
-            <li className="nav-item d-inline-flex align-items-center">
-              <i className="material-icons text-white">view_comfy</i>
-            </li>
             </ul>
         </nav>
         <div className="header-content text-white p-3">
@@ -43,7 +40,7 @@ const Header = () => {
             <br></br>  
             nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
           </p>
-          <button type="button" className="btn btn-primary text-uppercase text-white">Get Started</button>
+          <button type="button" className="btn btn-primary text-uppercase text-white">Proceed</button>
         </div>
     </div>
   </div> 

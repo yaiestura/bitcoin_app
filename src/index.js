@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import configureStore from './store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './styles/index.css'
+import './styles/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
