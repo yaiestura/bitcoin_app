@@ -16,12 +16,12 @@ const Contact = () => {
     <div>
       <div>
 		<div className="contact-bg">
-            <div className="contact-wrapper">
-                <h2 className="text-white">Contact Us</h2>
-            </div>
+          <div className="contact-wrapper">
+            <h2 className="text-white">Contact Us</h2>
+          </div>
 		</div>
 		<div className="section section-pad">
-			<div className="container">
+		  <div className="container">
 				<div className="row">
 					<div className="col-md-8 res-m-bttm">
 						<div className="contact-information">

@@ -3,6 +3,7 @@
 .cryptoData .card {
     transition: all .2s ease-in-out;
     width: 18%;
+    height: 150px;
     border-radius: 10px !important;
     border: 2px solid #002971 !important;
 }
@@ -27,12 +28,3 @@
     margin-top: 30px;
 }
 
-.fa-sort-up {
-    vertical-align: middle;
-    color: green;
-}
-
-.fa-sort-down {
-    vertical-align: middle;
-    color: red;
-}

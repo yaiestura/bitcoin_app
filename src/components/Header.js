@@ -37,13 +37,13 @@ const Header = () => {
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
             <br></br>
             tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-            <br></br>  
+            <br></br>
             nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
           </p>
           <button type="button" className="btn btn-primary text-uppercase text-white">Proceed</button>
         </div>
     </div>
-  </div> 
+  </div>
 
 
    );

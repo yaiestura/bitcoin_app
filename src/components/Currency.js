@@ -6,8 +6,9 @@ import '../styles/currency.css'
 const Card = (props) => {
   console.log(props.data);
   const priceTrend = <span className="align-top">
-    { Math.sign(props.data['1d']['price_change_pct']) == 1 ? (<i class="fa fa-sort-up"></i>)
-    :(<i class="fa fa-sort-down"></i>)}
+    { Math.sign(props.data['1d']['price_change_pct']) == 1 ? 
+    (<i class="material-icons" style={{color: "green"}}>arrow_upward</i>)
+    :(<i class="material-icons" style={{color: "red"}}>arrow_downward</i>)}
   </span>;
   return(
     <div className="card">
@@ -19,7 +20,7 @@ const Card = (props) => {
               </p>
               <p>{props.data['currency']} - USD</p>
               <p>$ {Number(props.data['price']).toFixed(2)}
-              ({Number(props.data['1d']['price_change_pct']).toFixed(3)} {priceTrend})</p>
+              ({Number(props.data['1d']['price_change_pct'] * 100).toFixed(2)}%{priceTrend})</p>
           </div>
         </div>
     </div>

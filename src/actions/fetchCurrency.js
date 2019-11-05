@@ -26,7 +26,7 @@ function fetchCurrencyError(error) {
 export default function fetchData(url) {
     return dispatch => {
         dispatch(fetchCurrencyPending());
-        fetch(url)
+        fetch(url , { headers: { accept: "Accept: application/json" } })
         .then(res => res.json())
         .then(res => {
             if(res.error) {
